@@ -21,7 +21,9 @@ const CollectionPage = () => {
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
-    document.removeEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
   }, [])
 
   useEffect(() => {
