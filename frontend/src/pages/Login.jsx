@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import login from "../assets/login.webp";
+import { loginUser } from '../redux/slices/authSlice';
+import { useDispatch } from 'react-redux';
 
 const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const dispatch = useDispatch();
 
-     const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("User Login:", { email, password});
+        // console.log("User Login:", { email, password});
+        dispatch(loginUser({ email, password }));
     }
 
     return (
@@ -46,15 +50,15 @@ const Login = () => {
                     <p className='mt-6 text-center text-sm'>
                         Don't have an account? {" "}
                         <Link to="/register" className='text-blue-500'>
-                        Register
+                            Register
                         </Link>
                     </p>
                 </form>
             </div>
             <div className='hidden md:block w-1/2 bg-gray-800'>
-            <div className='h-full flex flex-col justify-center items-center'>
-                <img src={login} alt="Login to Account" className='h-[750px] w-full object-cover'/>
-            </div>
+                <div className='h-full flex flex-col justify-center items-center'>
+                    <img src={login} alt="Login to Account" className='h-[750px] w-full object-cover' />
+                </div>
             </div>
         </div>
     )
