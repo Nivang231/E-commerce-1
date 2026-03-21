@@ -714,7 +714,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=27",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ-Q2Db3axWtZ6cn-l7kO2kpIIeXQP4I-JQ&s",
         altText: "Culottes Front View",
       },
     ],
