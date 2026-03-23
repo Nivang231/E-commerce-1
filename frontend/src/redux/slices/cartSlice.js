@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, isRejectedWithValue } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // Helper function to load cart from localStorage
@@ -165,7 +165,8 @@ const cartSlice = createSlice({
             })
             .addCase(addToCart.fulfilled, (state, action) => {
                 state.loading = false;
-                saveCartToStorage(action.payload);
+                state.cart = action.payload;
+                // saveCartToStorage(action.payload);
             })
             .addCase(addToCart.rejected, (state, action) => {
                 state.loading = false;
@@ -177,7 +178,8 @@ const cartSlice = createSlice({
             })
             .addCase(updateCartItemQuantity.fulfilled, (state, action) => {
                 state.loading = false;
-                saveCartToStorage(action.payload);
+                state.cart = action.payload;
+                // saveCartToStorage(action.payload);
             })
             .addCase(updateCartItemQuantity.rejected, (state, action) => {
                 state.loading = false;
@@ -189,7 +191,8 @@ const cartSlice = createSlice({
             })
             .addCase(removeFromCart.fulfilled, (state, action) => {
                 state.loading = false;
-                saveCartToStorage(action.payload);
+                state.cart = action.payload;
+                // saveCartToStorage(action.payload);
             })
             .addCase(removeFromCart.rejected, (state, action) => {
                 state.loading = false;

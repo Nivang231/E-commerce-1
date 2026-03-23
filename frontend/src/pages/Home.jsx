@@ -8,6 +8,7 @@ import FeaturedCollection from '../components/Products/FeaturedCollection'
 import FeaturesSection from '../components/Products/FeaturesSection'
 import { useDispatch, useSelector } from "react-redux"
 import axios from 'axios'
+import {fetchProductsByFilters} from "../redux/slices/productsSlice";
 
 
 
@@ -16,12 +17,15 @@ const Home = () => {
   const { products, loading, error } = useSelector((state) => state.products);
   const [bestSellerProduct, setBestSellerProduct] = useState(null);
 
+  console.log("Products:", products);
+console.log("Best Seller:", bestSellerProduct);
+
   useEffect(() => {
     // fetch product for a specific collection
     dispatch(fetchProductsByFilters({
       gender: "Women",
-      category: "Bottom Wear",
-      lomit: 8
+      category: "Top Wear",
+      limit: 8
     }));
     // fetch best seller product
     const fetchBestSeller = async () => {

@@ -9,7 +9,7 @@ export const fetchUsers = createAsyncThunk("admin/fetchUsers", async () => {
             headers: { Authorization: `Bearer ${localStorage.getItem("userToken")}` },
         }
     );
-    response.data;
+  return response.data;
 });
 
 // Add the create user action
@@ -46,7 +46,7 @@ export const updateUser = createAsyncThunk(
                 }
             }
         );
-        response.data;
+        return response.data.user;
     }
 );
 
@@ -86,6 +86,7 @@ const adminSlice = createSlice({
             })
             .addCase(updateUser.fulfilled, (state, action) => {
                 const updateUser = action.payload;
+                // console.log(action.payload)
                 const userIndex = state.users.findIndex(
                     (user) => user._id === updateUser._id
                 );

@@ -18,12 +18,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=39",
-        altText: "Classic Oxford Button-Down Shirt Front View",
+        url: "https://tse2.mm.bing.net/th/id/OIP.OkftdbMIQ7vr3vBTGeUW1wHaKX?pid=ImgDet&w=181&h=253&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Classic Oxford Button-Down Shirt front view blue cotton",
       },
       {
-        url: "https://picsum.photos/500/500?random=40",
-        altText: "Classic Oxford Button-Down Shirt Back View",
+        url: "https://tse2.mm.bing.net/th/id/OIP.cNPpNH1KatkFYVVsSzRE7gHaKX?pid=ImgDet&w=181&h=253&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Classic Oxford Button-Down Shirt back view",
       },
     ],
     rating: 4.5,
@@ -46,12 +46,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=41",
-        altText: "Slim-Fit Stretch Shirt Front View",
+        url: "https://tse2.mm.bing.net/th/id/OIP.BhJi0kz8yunVQ_0o_Pc1bgHaKX?rs=1&pid=ImgDetMain&o=7&rm=3",
+        altText: "Slim fit stretch shirt formal black front view",
       },
       {
-        url: "https://picsum.photos/500/500?random=42",
-        altText: "Slim-Fit Stretch Shirt Back View",
+        url: "https://tse3.mm.bing.net/th/id/OIP.FgEuC3-oXlwR7QiNiHUImgHaJo?rs=1&pid=ImgDetMain&o=7&rm=3",
+        altText: "Slim fit stretch shirt back view",
       },
     ],
     rating: 4.8,
@@ -74,12 +74,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=43",
-        altText: "Casual Denim Shirt Front View",
+        url: "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/2169922/2017/11/2/11509613529064-HERENOW-Men-Blue-Regular-Fit-Faded-Casual-Shirt-3721509613528888-1.jpg",
+        altText: "Casual denim shirt light blue front view",
       },
       {
-        url: "https://picsum.photos/500/500?random=44",
-        altText: "Casual Denim Shirt Back View",
+        url: "https://th.bing.com/th/id/OIP.rbObcHC6HnRimz2ZJxWkywHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+        altText: "Casual denim shirt back view",
       },
     ],
     rating: 4.6,
@@ -96,18 +96,18 @@ const products = [
     category: "Top Wear",
     brand: "Beach Breeze",
     sizes: ["S", "M", "L", "XL"],
-    colors: ["Tropical Print", "Navy Palms"],
+    colors: ["Tropical Print", "Pink"],
     collections: "Vacation Wear",
     material: "Viscose",
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=45",
-        altText: "Printed Resort Shirt Front View",
+        url: "https://th.bing.com/th/id/OIP.LBRYX9ep8D7ycJyNNSBp1gHaKA?w=202&h=272&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "Printed resort shirt tropical pattern front view",
       },
       {
-        url: "https://picsum.photos/500/500?random=1",
-        altText: "Printed Resort Shirt Back View",
+        url: "https://th.bing.com/th/id/OIP.DGe_j7Kxatrn6_z5QKIqgQHaKA?w=202&h=272&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "Printed resort shirt back view",
       },
     ],
     rating: 4.4,
@@ -130,12 +130,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=47",
+        url: "https://th.bing.com/th/id/OIP.FiBo6FNA2UMUe2RDiJcNAAHaJ4?w=202&h=269&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
         altText: "Slim-Fit Easy-Iron Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=2",
-        altText: "Slim-Fit Easy-Iron Shirt Front View",
+        url: "https://tse1.mm.bing.net/th/id/OIP.IxA9mzRqTLigtf4gtn9gBAHaJ4?pid=ImgDet&w=178&h=237&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Slim-Fit Easy-Iron Shirt Back View",
       },
     ],
     rating: 5,
@@ -158,12 +158,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=3",
-        altText: "Polo T-Shirt Front View",
+        url: "https://static.cilory.com/758441-large_default/mens-polo-t-shirt-with-contrast-ribbed-collar.jpg",
+        altText: "Polo t-shirt cotton front view",
       },
       {
-        url: "https://picsum.photos/500/500?random=4",
-        altText: "Polo T-Shirt Back View",
+        url: "https://www.beyoung.in/api/cache/catalog/products/new_chinos_update_image_23_9_2022/light_blue_ribbed_collar_polo_t_shirt_base_23_10_2024_400x533.jpg",
+        altText: "Polo t-shirt back view",
       },
     ],
     rating: 4.3,
@@ -186,8 +186,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=5",
+        url: "https://th.bing.com/th/id/OIP.u0BBuUYLgnzQ0IhvHDoQBwHaJR?w=202&h=253&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
         altText: "Oversized Graphic T-Shirt Front View",
+      },
+      {
+        url: "https://th.bing.com/th/id/OIP.ADlYk7W8k4ATHGSEbPI48gHaJQ?w=202&h=253&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "Oversized Graphic T-Shirt Back View",
       },
     ],
     rating: 4.6,
@@ -210,8 +214,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=6",
+        url: "https://tse1.mm.bing.net/th/id/OIP.4pUUq5u35ISD6uZsMWtlZQHaLW?pid=ImgDet&w=178&h=273&c=7&dpr=1.5&o=7&rm=3",
         altText: "Regular-Fit Henley Shirt Front View",
+      },
+      {
+        url: "https://tse1.mm.bing.net/th/id/OIP.srEN1AASsDWDVnHaqjNdYwHaLW?pid=ImgDet&w=178&h=273&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Regular-Fit Henley Shirt Back View",
       },
     ],
     rating: 4.5,
@@ -234,8 +242,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=7",
+        url: "https://i5.walmartimages.com/seo/Men-s-Medium-Weight-Long-Sleeve-Thermal-Tee-Black-S_c9158e9a-9218-4413-91af-2c5853750887_1.15c216c3fbdbc74fc554e93d834ecb83.jpeg",
         altText: "Long-Sleeve Thermal Tee Front View",
+      },
+      {
+        url: "https://i5.walmartimages.com/seo/Cottonbell-Men-s-Classic-Waffle-Knit-Heavyweight-Cotton-Long-Sleeve-Thick-Thermal-T-Shirt-Top_0ba58694-0a38-4b92-9b48-acaedce9a681.7d7548806e549a8b8e6fb118f9223d56.jpeg",
+        altText: "Long-Sleeve Thermal Tee Back View",
       },
     ],
     rating: 4.4,
@@ -258,8 +270,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=8",
+        url: "https://tse1.mm.bing.net/th/id/OIP.jGH1rVGTdaTVGnUNx-nx4AHaJQ?pid=ImgDet&w=181&h=226&c=7&dpr=1.5&o=7&rm=3",
         altText: "V-Neck Classic T-Shirt Front View",
+      },
+      {
+        url: "https://tse2.mm.bing.net/th/id/OIP.RzhqZWRVfP6e1ftnxOmLMAHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3",
+        altText: "V-Neck Classic T-Shirt Back View",
       },
     ],
     rating: 4.7,
@@ -282,8 +298,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=9",
+        url: "https://tse2.mm.bing.net/th/id/OIP.YWRTPJFjc0D8E6Muv8PdjQAAAA?pid=ImgDet&w=181&h=272&c=7&dpr=1.5&o=7&rm=3",
         altText: "Slim Fit Joggers Front View",
+      },
+      {
+        url: "https://tse2.mm.bing.net/th/id/OIP.TSV1meQCbpatuE5X7m5HFQHaLH?pid=ImgDet&w=181&h=271&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Slim Fit Joggers Back View",
       },
     ],
     rating: 4.5,
@@ -306,8 +326,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=10",
+        url: "https://tigc.in/cdn/shop/files/1022-RPCRGJG01-08_8.jpg?v=1727782137",
         altText: "Cargo Joggers Front View",
+      },
+      {
+        url: "https://tse1.mm.bing.net/th/id/OIP.pP_SqOQnuT8btaLO06DP2wHaJ4?pid=ImgDet&w=60&h=60&c=7&dpr=1.5&rs=1&o=7&rm=3",
+        altText: "Cargo Joggers Back View",
       },
     ],
     rating: 4.7,
@@ -330,8 +354,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=11",
+        url: "https://tse1.mm.bing.net/th/id/OIP.uwXCTI8WHQDyrNfyYDu20QHaKA?pid=ImgDet&w=181&h=244&c=7&dpr=1.5&o=7&rm=3",
         altText: "Tapered Sweatpants Front View",
+      },
+      {
+        url: "https://tse1.mm.bing.net/th/id/OIP.UY1Al7sGiQpoTLKHAe_2rgHaKA?pid=ImgDet&w=181&h=244&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Tapered Sweatpants Back View",
       },
     ],
     rating: 4.3,
@@ -354,8 +382,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=12",
+        url: "https://th.bing.com/th/id/OIP.OhhwhKu3upKeUNd90XuTywHaJ4?w=202&h=269&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
         altText: "Denim Jeans Front View",
+      },
+      {
+        url: "https://th.bing.com/th/id/OIP.ifQ_R7C3GzJ9I_tB557yfAHaJ4?w=202&h=269&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "Denim Jeans Back View",
       },
     ],
     rating: 4.6,
@@ -378,8 +410,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=13",
+        url: "https://tse1.mm.bing.net/th/id/OIP.CFkJzI_sWJ4dA3ufZQo9YAHaLW?pid=ImgDet&w=60&h=60&c=7&dpr=1.5&rs=1&o=7&rm=3",
         altText: "Chino Pants Front View",
+      },
+      {
+        url: "https://tse3.mm.bing.net/th/id/OIP.w0qlfFUQBgKc3frTJFUYWAHaLW?pid=ImgDet&w=60&h=60&c=7&dpr=1.5&rs=1&o=7&rm=3",
+        altText: "Chino Pants Back View",
       },
     ],
     rating: 4.8,
@@ -402,8 +438,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=14",
+        url: "https://th.bing.com/th/id/OIP.F-d2mbVgHkOYNC9HQp_pSgHaJ4?w=202&h=269&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
         altText: "Track Pants Front View",
+      },
+      {
+        url: "https://th.bing.com/th/id/OIP.qHJWOQsa8H7CfTR3_2hVnAHaJE?w=202&h=248&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "Track Pants Back View",
       },
     ],
     rating: 4.2,
@@ -426,8 +466,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=15",
+        url: "https://th.bing.com/th/id/OIP.bDFFC1PVyF7kdeBD5F63OwHaJ4?w=202&h=269&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
         altText: "Slim Fit Trousers Front View",
+      },
+      {
+        url: "https://th.bing.com/th/id/OIP.eKG9-DYBveyzRDFiDFhc3AHaJ4?w=202&h=269&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "Slim Fit Trousers Back View",
       },
     ],
     rating: 4.7,
@@ -450,8 +494,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=16",
+        url: "https://www.neohopeclothing.com/wp-content/uploads/2023/08/2-5.jpg",
         altText: "Cargo Pants Front View",
+      },
+      {
+        url: "https://tse2.mm.bing.net/th/id/OIP.TJOxwME6LzXrKjQ52PjzmgHaHa?pid=ImgDet&w=60&h=60&c=7&dpr=1.5&rs=1&o=7&rm=3",
+        altText: "Cargo Pants Back View",
       },
     ],
     rating: 4.5,
@@ -474,8 +522,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=17",
+        url: "https://tse1.mm.bing.net/th/id/OIP.l9w0Y2-n--kC8mRumVQm8wHaKj?pid=ImgDet&w=181&h=258&c=7&dpr=1.5&o=7&rm=3",
         altText: "Relaxed Fit Sweatpants Front View",
+      },
+      {
+        url: "https://tse1.explicit.bing.net/th/id/OIP.oDa1NXdaDXjyv4eINOIKeAHaJ4?pid=ImgDet&w=181&h=241&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Relaxed Fit Sweatpants Back View",
       },
     ],
     rating: 4.3,
@@ -498,8 +550,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=18",
+        url: "https://th.bing.com/th/id/OIP.ESvManl1iB70CHO02ftKRAHaLF?w=202&h=302&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
         altText: "Formal Dress Pants Front View",
+      },
+      {
+        url: "https://th.bing.com/th/id/OIP.ONIxBkIGAlnR6X5tygRufgHaLH?w=202&h=303&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "Formal Dress Pants Back View",
       },
     ],
     rating: 4.9,
@@ -522,8 +578,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=19",
+        url: "https://th.bing.com/th/id/OIP.ePscEgspEXft3I4gm6Ue9QHaJf?w=202&h=260&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
         altText: "High-Waist Skinny Jeans",
+      },
+      {
+        url: "https://th.bing.com/th/id/OIP.5g2sQX77CkNuWRMX0x812QHaJ3?w=202&h=269&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "High-Waist Skinny Jeans Back View",
       },
     ],
     rating: 4.8,
@@ -546,8 +606,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=20",
+        url: "https://tse4.mm.bing.net/th/id/OIP.3gWFK2sTtaRA3QcT4jphbAHaJo?rs=1&pid=ImgDetMain&o=7&rm=3",
         altText: "Wide-Leg Trousers Front View",
+      },
+      {
+        url: "https://tse3.mm.bing.net/th/id/OIP.Jz_Wh-z-lyLAl4dcaVESEwHaJo?pid=ImgDet&w=60&h=60&c=7&dpr=1.5&rs=1&o=7&rm=3",
+        altText: "Wide-Leg Trousers Back View",
       },
     ],
     rating: 4.7,
@@ -570,8 +634,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=21",
+        url: "https://o1product-images.cdn.myownshop.in/7137267852.jpeg",
         altText: "Stretch Leggings Front View",
+      },
+      {
+        url: "https://tse1.mm.bing.net/th/id/OIP.AjO9TGvZfdK2laeDMjyjUAHaJ4?pid=ImgDet&w=178&h=237&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Stretch Leggings Back View",
       },
     ],
     rating: 4.5,
@@ -594,8 +662,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=22",
+        url: "https://tse1.mm.bing.net/th/id/OIP.PrJSDui8Uq2kDJI3fy4riAHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3",
         altText: "Pleated Midi Skirt Front View",
+      },
+      {
+        url: "https://tse3.mm.bing.net/th/id/OIP.Vduzx0BVbik4CvZVS9SfWwHaKy?pid=ImgDet&w=181&h=264&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Pleated Midi Skirt Back View",
       },
     ],
     rating: 4.6,
@@ -618,8 +690,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=23",
+        url: "https://tse3.mm.bing.net/th/id/OIP.gXOHfLn_qVNDu1UT88YsMgHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3",
         altText: "Flared Palazzo Pants Front View",
+      },
+      {
+        url: "https://tse3.mm.bing.net/th/id/OIP.EDJFEpGU193A00DJPXjfFgHaJ4?pid=ImgDet&w=181&h=242&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Flared Palazzo Pants Back View",
       },
     ],
     rating: 4.4,
@@ -642,8 +718,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=24",
+        url: "https://tse4.mm.bing.net/th/id/OIP.08TUTkC2Ue-nXhVyh8D3PAHaKX?pid=ImgDet&w=181&h=253&c=7&dpr=1.5&o=7&rm=3",
         altText: "High-Rise Joggers Front View",
+      },
+      {
+        url: "https://tse2.mm.bing.net/th/id/OIP.uiegwTftAbW1k_xC_rCrkAHaKX?pid=ImgDet&w=181&h=253&c=7&dpr=1.5&o=7&rm=3",
+        altText: "High-Rise Joggers Back View",
       },
     ],
     rating: 4.3,
@@ -666,8 +746,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=25",
+        url: "https://belk.scene7.com/is/image/Belk?layer=0&src=1804527_13024SPH000029_B_003&wid=3000&fit=wrap",
         altText: "Paperbag Waist Shorts Front View",
+      },
+      {
+        url: "https://tse2.mm.bing.net/th/id/OIP.fAOvItnfnil7b3tZDrDy7gHaJ3?pid=ImgDet&w=181&h=241&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Paperbag Waist Shorts Back View",
       },
     ],
     rating: 4.5,
@@ -690,8 +774,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=26",
+        url: "https://www.lockside.com/cdn/shop/files/19721_600x.jpg?v=1748547168",
         altText: "Stretch Denim Shorts Front View",
+      },
+      {
+        url: "https://tse3.mm.bing.net/th/id/OIP.OtX0Ufo63cK2134bsVLbxQHaJQ?pid=ImgDet&w=181&h=226&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Stretch Denim Shorts Back View",
       },
     ],
     rating: 4.7,
@@ -714,8 +802,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQ-Q2Db3axWtZ6cn-l7kO2kpIIeXQP4I-JQ&s",
+        url: "https://tse1.mm.bing.net/th/id/OIP.g0MtODiSkoH_e3_VRclZWwHaJ3?pid=ImgDet&w=181&h=241&c=7&dpr=1.5&o=7&rm=3",
         altText: "Culottes Front View",
+      },
+      {
+        url: "https://www.bing.com/images/search?view=detailV2&ccid=5SioA%2B0S&id=652367241F0D328F73D8DCC2BD8FBBB7999BD84F&thid=OIP.5SioA-0SGbFXVTttfcUsGwHaJ3&mediaurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F34%2Fd2%2F86%2F34d2863d22af0ba779cb6cb57f34bc44.jpg&exph=981&expw=736&q=culottes+for+women&form=IRPRST&ck=B8112B8B5C31BCC3B7DA36E2032A64E0&selectedindex=1&itb=0&cw=1145&ch=529&ajaxhist=0&ajaxserp=0&vt=2&sim=11&iss=VSI&cit=ccid_g0MtODiS*cp_79AEBB89722DABB1C13CA9690A091655*mid_16D45EE47A5E2D63A680F30A2E9E240AB955A5E8*thid_OIP.g0MtODiSkoH!_e3!_VRclZWwHaJ3",
+        altText: "Culottes Back View",
       },
     ],
     rating: 4.6,
@@ -738,8 +830,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=28",
+        url: "https://tse1.explicit.bing.net/th/id/OIP.EQqgNGohea6Q-hTF9pnu0QHaLG?pid=ImgDet&w=181&h=271&c=7&dpr=1.5&o=7&rm=3",
         altText: "Classic Pleated Trousers Front View",
+      },
+      {
+        url: "https://tse2.mm.bing.net/th/id/OIP.SAXdkrfgGdtHo_EQ7UL-RAHaJQ?pid=ImgDet&w=181&h=226&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Classic Pleated Trousers Back View",
       },
     ],
     rating: 4.8,
@@ -762,8 +858,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=29",
+        url: "https://tse1.explicit.bing.net/th/id/OIP.-TIYAgoZYO1DVrJpE9GCCwHaHa?pid=ImgDet&w=181&h=181&c=7&dpr=1.5&o=7&rm=3",
         altText: "Knitted Cropped Top",
+      },
+      {
+        url: "https://www.bing.com/images/search?view=detailV2&ccid=UIYFYq2A&id=ED37C16B2FA39C7B86EBF7B7A89DD18B33E71FFB&thid=OIP.UIYFYq2ACg7lpDsBk1DfdgHaHa&mediaurl=https%3A%2F%2Fi.etsystatic.com%2F35984954%2Fr%2Fil%2F5476e7%2F4890365580%2Fil_fullxfull.4890365580_8y9c.jpg&exph=1658&expw=1658&q=Knitted+Cropped+Top+women&form=IRPRST&ck=7A89C1AECD901E5650493F78B5BF0546&selectedindex=2&itb=0&cw=1145&ch=529&ajaxhist=0&ajaxserp=0&cit=ccid_e3g2mEhM*cp_C5E9EADFB6AEC4964E49DE0F7ED9A4BD*mid_ED37C16B2FA39C7B86EB8C3ED2810B80860F54CE*thid_OIP.e3g2mEhM1IsynQs3cPTPGwHaHa&vt=2",
+        altText: "Knitted Cropped Top Back View",
       },
     ],
     rating: 4.6,
@@ -786,8 +886,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=30",
+        url: "https://tse3.mm.bing.net/th/id/OIP.EGC6nN4ld-hkyMmzZsq2_gHaLG?pid=ImgDet&w=181&h=271&c=7&dpr=1.5&o=7&rm=3",
         altText: "Boho Floral Blouse",
+      },
+      {
+        url: "https://tse1.mm.bing.net/th/id/OIP.mPS4QP5mSswRbLRNLi9KUgHaLH?pid=ImgDet&w=181&h=271&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Boho Floral Blouse Back View",
       },
     ],
     rating: 4.7,
@@ -810,8 +914,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=31",
+        url: "https://th.bing.com/th/id/OIP.oLtuTGWxOcIG3XqJKk3A5gHaIl?w=182&h=211&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
         altText: "Casual T-Shirt",
+      },
+      {
+        url: "https://th.bing.com/th/id/OIP.CkTa8RrLWju-sw-WNumoQQHaIl?w=182&h=211&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        altText: "Casual T-Shirt Back View",
       },
     ],
     rating: 4.5,
@@ -834,8 +942,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=32",
+        url: "https://oldnavy.gap.com/webcontent/0055/590/603/cn55590603.jpg",
         altText: "Off-Shoulder Top",
+      },
+      {
+        url: "https://tse2.mm.bing.net/th/id/OIP.YBnCfxwFXST22g3jswp3IgHaJQ?pid=ImgDet&w=178&h=222&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Off-Shoulder Top Back View",
       },
     ],
     rating: 4.7,
@@ -858,8 +970,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=33",
+        url: "https://www.jcrew.com/s7-img-facade/CD033_NA6434?$crop1254$",
         altText: "Lace-Trimmed Cami Top",
+      },
+      {
+        url: "https://tse2.mm.bing.net/th/id/OIP.XORibWN_5rl4pE6tTL7-dgHaJQ?pid=ImgDet&w=181&h=226&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Lace-Trimmed Cami Top Back View",
       },
     ],
     rating: 4.8,
@@ -882,8 +998,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=34",
+        url: "https://tse3.mm.bing.net/th/id/OIP.hau4JoRbOMCYd8eMtP_DSAHaNI?pid=ImgDet&w=181&h=320&c=7&dpr=1.5&o=7&rm=3",
         altText: "Graphic Print Tee",
+      },
+      {
+        url: "https://tse1.mm.bing.net/th/id/OIP.4PYPGzZft51ixEfU7Pn6IQHaNI?pid=ImgDet&w=181&h=320&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Graphic Print Tee Back View",
       },
     ],
     rating: 4.6,
@@ -906,8 +1026,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=35",
+        url: "https://tse1.explicit.bing.net/th/id/OIP.wCxzSc_nFeQ4qF1u7RViEwHaJd?pid=ImgDet&w=178&h=227&c=7&dpr=1.5&o=7&rm=3",
         altText: "Ribbed Long-Sleeve Top",
+      },
+      {
+        url: "https://tse1.explicit.bing.net/th/id/OIP.e38GwGrG3pcsgey5huAGhQHaJd?pid=ImgDet&w=178&h=227&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Ribbed Long-Sleeve Top Back View",
       },
     ],
     rating: 4.7,
@@ -930,8 +1054,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=36",
+        url: "https://slimages.macysassets.com/is/image/MCY/products/5/optimized/27239855_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1",
         altText: "Ruffle-Sleeve Blouse",
+      },
+      {
+        url: "https://tse1.mm.bing.net/th/id/OIP.46WyKJp5Re0Q9XkQf4DwsAHaJC?pid=ImgDet&w=178&h=217&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Ruffle-Sleeve Blouse Back View",
       },
     ],
     rating: 4.5,
@@ -954,8 +1082,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=37",
+        url: "https://images.squarespace-cdn.com/content/v1/62d1ac8b005fcb0457a8d85f/6bf7ac0a-9394-4711-a130-625ed5add52d/image18.jpg?format=1500w",
         altText: "Classic Button-Up Shirt",
+      },
+      {
+        url: "https://tse4.mm.bing.net/th/id/OIP.f5VClzrN6il-uWgV8jQZBAAAAA?pid=ImgDet&w=181&h=240&c=7&dpr=1.5&o=7&rm=3",
+        altText: "Classic Button-Up Shirt Back View",
       },
     ],
     rating: 4.8,
@@ -978,8 +1110,12 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=38",
+        url: "https://asset1.cxnmarksandspencer.com/is/image/mands/Sequin-V-Neck-Wrap-Top/SD_10_T83_4798W_E4_X_EC_0?$PDP_IMAGEGRID$&wid=1024&qlt=80",
         altText: "V-Neck Wrap Top",
+      },
+      {
+        url: "https://tse1.mm.bing.net/th/id/OIP.W7TTLe0Fhf33UagVopBcnwHaJn?pid=ImgDet&w=60&h=60&c=7&dpr=1.5&rs=1&o=7&rm=3",
+        altText: "V-Neck Wrap Top Back View",
       },
     ],
     rating: 4.7,

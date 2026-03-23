@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
     fetchProductDetails,
     fetchSimilarProducts
-} from "../../redux/slices/cartSlice";
+} from "../../redux/slices/productsSlice";
 import { addToCart } from '../../redux/slices/cartSlice';
 
 
@@ -22,12 +22,15 @@ const ProductDetails = ({ productId }) => {
     const [quantity, setQuantity] = useState(1);
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
+    console.log("Selected Product:", selectedProduct);
+
     const productFetchId = productId || id;
+    console.log(productId)
 
     useEffect(() => {
-        if(productFetchId) {
+        if (productFetchId) {
             dispatch(fetchProductDetails(productFetchId));
-            dispatch(fetchSimilarProducts({id: productFetchId}))
+            dispatch(fetchSimilarProducts({ id: productFetchId }))
         }
     }, [dispatch, productFetchId]);
 
@@ -51,30 +54,37 @@ const ProductDetails = ({ productId }) => {
         }
         setIsButtonDisabled(true);
 
-       dispatch(
-        addToCart({
-            productId: productFetchId,
-            quantity,
-            ssize: selectedSize,
-            color: selectedColor,
-            guestId,
-            userId: user?._id
-        })
-       )
-       .then(() => {
-        toast.success("Product added to cart!", {
-            duration: 1000,
-        })
-       })
-       .finally(() => {
-        isButtonDisabled(false);
-       })
+        dispatch(
+            addToCart({
+                productId: productFetchId,
+                quantity,
+                size: selectedSize,
+                color: selectedColor,
+                guestId,
+                userId: user?._id
+            })
+        )
+            .then(() => {
+                toast.success("Product added to cart!", {
+                    duration: 1000,
+                })
+            })
+            .finally(() => {
+                setIsButtonDisabled(false)
+            })
     };
 
-    if(loading)
+    if (loading) {
+        return <p>Loading...</p>
+    }
+
+    if (error) {
+        return <p>Error: {error}</p>
+    }
 
     return (
         <div className='p-6'>
+            {selectedProduct && (
             <div className='mx-w-6xl mx-auto bg-white p-8 rounded-lg'>
                 <div className='flex flex-col md:flex-row'>
                     <div className='hidden md:flex flex-col space-y-4 mr-6'>
@@ -178,9 +188,10 @@ const ProductDetails = ({ productId }) => {
                     <h2 className='text-2xl text-center font-medium mb-4'>
                         You May Also Like
                     </h2>
-                    <ProductGrid products={similarProducts} />
+                    <ProductGrid products={similarProducts} loading={loading} error={error}/>
                 </div>
             </div>
+            )}
         </div>
     )
 }

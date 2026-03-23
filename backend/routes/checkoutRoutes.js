@@ -73,6 +73,7 @@ router.put('/:id/pay', protect, async (req, res) => {
 // @access Private
 
 router.post('/:id/finalize', protect, async (req, res) => {
+    
     try {
         const checkout = await Checkout.findById(req.params.id);
 
@@ -83,7 +84,8 @@ router.post('/:id/finalize', protect, async (req, res) => {
         if (checkout.isPaid && !checkout.isFinalized) {
             const finalOrder = await Order.create({
                 user: checkout.user,
-                orderItems: checkout.orderItems,
+                // orderItems: checkout.orderItems,
+                orderItems: checkout.checkoutItems,
                 shippingAddress: checkout.shippingAddress,
                 paymentMethod: checkout.paymentMethod,
                 totalPrice: checkout.totalPrice,

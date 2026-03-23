@@ -85,7 +85,7 @@ const adminOrderSlice = createSlice({
 
                 // calculate total sales
                 const totalSales = action.payload.reduce((acc, order) => {
-                    return acc + order.totalPrice;
+                    return acc + Number(order.totalPrice);
                 }, 0);
                 state.totalSales = totalSales;
 
