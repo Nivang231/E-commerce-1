@@ -1,0 +1,9 @@
+logs
+*.logs
+
+frontend/node-modules/
+backend/node-modules/
+
+frontend/.env
+backend/.env
+.DB_Store
