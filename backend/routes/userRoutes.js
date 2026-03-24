@@ -1,7 +1,9 @@
 const express = require("express");
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
-const {protect} = require("../middleware/authMiddleware")
+const crypto = require("crypto");
+const nodemailer = require("nodemailer");
+const {protect} = require("../middleware/authMiddleware");
 const router = express.Router();
 
 // @route POST /api/user/register
@@ -84,6 +86,73 @@ router.post("/login",  async (req,res) => {
         console.log(error);
         res.status(500).send("Server Error");
     }
+});
+
+
+router.post("/forgot-password", async (req, res) => {
+    try {
+        console.log("FORGOT PASSWORD API HIT");
+
+        const user = await User.findOne({ email: req.body.email });
+
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        const resetToken = user.getResetToken();
+        await user.save();
+
+        const resetUrl = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
+
+        console.log("RESET URL:", resetUrl);
+
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: process.env.EMAIL,
+                pass: process.env.PASSWORD,
+            },
+        });
+
+        await transporter.sendMail({
+            to: user.email,
+            subject: "Password Reset",
+            text: `Reset your password: ${resetUrl}`,
+        });
+
+        console.log("EMAIL SENT SUCCESS ✅");
+
+        return res.json({ message: "Email sent" });
+
+    } catch (error) {
+        console.log("FULL ERROR ❌:", error);
+        return res.status(500).json({ message: "Server error" });
+    }
+});
+
+
+router.post("/reset-password/:token", async (req, res) => {
+    const hashedToken = crypto
+        .createHash("sha256")
+        .update(req.params.token)
+        .digest("hex");
+
+    const user = await User.findOne({
+        resetPasswordToken: hashedToken,
+        resetPasswordExpire: { $gt: Date.now() }
+    });
+
+    if (!user) {
+        return res.status(400).json({ message: "Token invalid or expired" });
+    }
+
+    user.password = req.body.password;
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpire = undefined;
+
+    await user.save();
+
+    res.json({ message: "Password reset successful" });
 });
 
 // @route GET /api/users/profile

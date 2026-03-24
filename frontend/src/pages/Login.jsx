@@ -11,21 +11,21 @@ const Login = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const location = useLocation();
-    const {user, guestId, loading} = useSelector((state) => state.auth);
-    const {cart} = useSelector((state) => state.cart);
+    const { user, guestId, loading } = useSelector((state) => state.auth);
+    const { cart } = useSelector((state) => state.cart);
 
     // Get redirect parameter and check if it's checkout or something
     const redirect = new URLSearchParams(location.search).get("redirect") || "/";
     const isCheckoutredirect = redirect.includes("checkout");
 
     useEffect(() => {
-        if(user) {
-            if(cart?.products.length > 0 && guestId) {
-                dispatch(mergeCart({guestId,user})).then(() => {
+        if (user) {
+            if (cart?.products.length > 0 && guestId) {
+                dispatch(mergeCart({ guestId, user })).then(() => {
                     navigate(isCheckoutredirect ? "/checkout" : "/")
                 })
             } else {
-                 navigate(isCheckoutredirect ? "/checkout" : "/")
+                navigate(isCheckoutredirect ? "/checkout" : "/")
             }
         }
     }, [user, guestId, cart, navigate, isCheckoutredirect, dispatch]);
@@ -66,14 +66,20 @@ const Login = () => {
                     </div>
                     <button type='submit'
                         className='w-full bg-black text-white p-2 rounded-lg font-semibold hover:bg-gray-800 transition'>
-                       {loading ? "loading..." : "Sign In"}
+                        {loading ? "loading..." : "Sign In"}
                     </button>
                     <p className='mt-6 text-center text-sm'>
                         Don't have an account? {" "}
                         <Link to={`/register?redirect=${encodeURIComponent(redirect)}`}
-                         className='text-blue-500'>
+                            className='text-blue-500'>
                             Register
                         </Link>
+                    </p>
+                    <p className='mt-6 text-center text-sm cursor-pointer'>
+                         
+                    <span className=' text-blue-500' onClick={() => navigate("/forgot-password")}>
+                        Forgot Password?
+                    </span>
                     </p>
                 </form>
             </div>

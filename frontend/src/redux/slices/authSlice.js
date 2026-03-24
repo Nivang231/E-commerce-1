@@ -55,6 +55,42 @@ export const registerUser = createAsyncThunk(
     }
 );
 
+export const forgotPassword = createAsyncThunk(
+    "auth/forgotPassword",
+    async (email, { rejectWithValue }) => {
+        try {
+            console.log("API URL:", `${import.meta.env.VITE_BACKEND_URL}/api/users/forgot-password`);
+
+            const response = await axios.post(
+                `${import.meta.env.VITE_BACKEND_URL}/api/users/forgot-password`,
+                { email }
+            );
+
+            return response.data;
+
+        } catch (error) {
+            return rejectWithValue(
+                error.response?.data || { message: "Something went wrong" }
+            );
+        }
+    }
+);
+
+export const resetPassword = createAsyncThunk(
+    "auth/resetPassword",
+    async ({ token, password }, { rejectWithValue }) => {
+        try {
+            const response = await axios.post(
+                `${import.meta.env.VITE_BACKEND_URL}/api/users/reset-password/${token}`,
+                { password }
+            );
+            return response.data;
+        } catch (error) {
+            return rejectWithValue(error.response?.data);
+        }
+    }
+);
+
 // Slice
 const authSlice = createSlice({
     name: "auth",
@@ -72,6 +108,9 @@ const authSlice = createSlice({
             localStorage.setItem("guestId", state.guestId);
         },
     },
+
+
+
     extraReducers: (builder) => {
         builder
             .addCase(loginUser.pending, (state) => {
@@ -98,8 +137,32 @@ const authSlice = createSlice({
                 state.loading = false;
                 state.error = action.payload.message;
             })
+
+            .addCase(forgotPassword.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(forgotPassword.fulfilled, (state) => {
+                state.loading = false;
+            })
+            .addCase(forgotPassword.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload?.message || "Error";
+            })
+
+            .addCase(resetPassword.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(resetPassword.fulfilled, (state) => {
+                state.loading = false;
+            })
+            .addCase(resetPassword.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload?.message || "Error";
+            })
     },
 });
 
-export const {logout, generateNewGuestId} = authSlice.actions;
+export const { logout, generateNewGuestId } = authSlice.actions;
 export default authSlice.reducer;
