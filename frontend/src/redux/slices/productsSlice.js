@@ -74,6 +74,21 @@ export const fetchSimilarProducts = createAsyncThunk(
         return response.data;
     }
 );
+export const addReview = createAsyncThunk(
+    "products/addReview",
+    async ({ id, rating, comment }) => {
+        const response = await axios.post(
+            `${import.meta.env.VITE_BACKEND_URL}/api/products/${id}/review`,
+            { rating, comment },
+            {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem("userToken")}`
+                }
+            }
+        );
+        return response.data;
+    }
+);
 
 const productsSlice = createSlice({
     name: "products",
@@ -175,8 +190,11 @@ const productsSlice = createSlice({
                 state.loading = false;
                 state.error = action.error.message;
             })
+            .addCase(addReview.fulfilled, (state, action) => {
+                state.selectedProduct = action.payload;
+            })
     }
 });
 
-export const {setFilters, clearFilters} = productsSlice.actions;
+export const { setFilters, clearFilters } = productsSlice.actions;
 export default productsSlice.reducer;

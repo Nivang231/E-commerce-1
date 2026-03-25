@@ -1,5 +1,15 @@
 const mongoose = require("mongoose");
 
+const reviewSchema = new mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+    },
+    name: String,
+    rating: Number,
+    comment: String
+}, { timestamps: true });
+
 const productSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -80,6 +90,7 @@ const productSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    reviews: [reviewSchema],
     tags:  [String],
     user: {
         type: mongoose.Schema.Types.ObjectId,

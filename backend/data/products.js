@@ -26,8 +26,7 @@ const products = [
         altText: "Classic Oxford Button-Down Shirt back view",
       },
     ],
-    rating: 4.5,
-    numReviews: 12,
+    
   },
   {
     name: "Slim-Fit Stretch Shirt",
@@ -54,9 +53,8 @@ const products = [
         altText: "Slim fit stretch shirt back view",
       },
     ],
-    rating: 4.8,
-    numReviews: 15,
-  },
+     
+  }, 
   {
     name: "Casual Denim Shirt",
     description:
@@ -82,8 +80,7 @@ const products = [
         altText: "Casual denim shirt back view",
       },
     ],
-    rating: 4.6,
-    numReviews: 8,
+      
   },
   {
     name: "Printed Resort Shirt",
@@ -110,8 +107,7 @@ const products = [
         altText: "Printed resort shirt back view",
       },
     ],
-    rating: 4.4,
-    numReviews: 10,
+      
   },
   {
     name: "Slim-Fit Easy-Iron Shirt",
@@ -138,8 +134,7 @@ const products = [
         altText: "Slim-Fit Easy-Iron Shirt Back View",
       },
     ],
-    rating: 5,
-    numReviews: 14,
+      
   },
   {
     name: "Polo T-Shirt with Ribbed Collar",
@@ -166,8 +161,7 @@ const products = [
         altText: "Polo t-shirt back view",
       },
     ],
-    rating: 4.3,
-    numReviews: 22,
+      
   },
   {
     name: "Oversized Graphic T-Shirt",
@@ -194,8 +188,7 @@ const products = [
         altText: "Oversized Graphic T-Shirt Back View",
       },
     ],
-    rating: 4.6,
-    numReviews: 30,
+     
   },
   {
     name: "Regular-Fit Henley Shirt",
@@ -222,8 +215,7 @@ const products = [
         altText: "Regular-Fit Henley Shirt Back View",
       },
     ],
-    rating: 4.5,
-    numReviews: 25,
+      
   },
   {
     name: "Long-Sleeve Thermal Tee",
@@ -250,8 +242,7 @@ const products = [
         altText: "Long-Sleeve Thermal Tee Back View",
       },
     ],
-    rating: 4.4,
-    numReviews: 18,
+      
   },
   {
     name: "V-Neck Classic T-Shirt",
@@ -278,8 +269,7 @@ const products = [
         altText: "V-Neck Classic T-Shirt Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 28,
+      
   },
   {
     name: "Slim Fit Joggers",
@@ -306,8 +296,7 @@ const products = [
         altText: "Slim Fit Joggers Back View",
       },
     ],
-    rating: 4.5,
-    numReviews: 12,
+      
   },
   {
     name: "Cargo Joggers",
@@ -334,8 +323,7 @@ const products = [
         altText: "Cargo Joggers Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 20,
+      
   },
   {
     name: "Tapered Sweatpants",
@@ -362,8 +350,7 @@ const products = [
         altText: "Tapered Sweatpants Back View",
       },
     ],
-    rating: 4.3,
-    numReviews: 18,
+      
   },
   {
     name: "Denim Jeans",
@@ -390,8 +377,7 @@ const products = [
         altText: "Denim Jeans Back View",
       },
     ],
-    rating: 4.6,
-    numReviews: 22,
+      
   },
   {
     name: "Chino Pants",
@@ -418,8 +404,7 @@ const products = [
         altText: "Chino Pants Back View",
       },
     ],
-    rating: 4.8,
-    numReviews: 15,
+      
   },
   {
     name: "Track Pants",
@@ -446,8 +431,7 @@ const products = [
         altText: "Track Pants Back View",
       },
     ],
-    rating: 4.2,
-    numReviews: 17,
+     
   },
   {
     name: "Slim Fit Trousers",
@@ -474,8 +458,7 @@ const products = [
         altText: "Slim Fit Trousers Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 10,
+      
   },
   {
     name: "Cargo Pants",
@@ -502,8 +485,7 @@ const products = [
         altText: "Cargo Pants Back View",
       },
     ],
-    rating: 4.5,
-    numReviews: 13,
+      
   },
   {
     name: "Relaxed Fit Sweatpants",
@@ -530,8 +512,7 @@ const products = [
         altText: "Relaxed Fit Sweatpants Back View",
       },
     ],
-    rating: 4.3,
-    numReviews: 14,
+      
   },
   {
     name: "Formal Dress Pants",
@@ -558,8 +539,7 @@ const products = [
         altText: "Formal Dress Pants Back View",
       },
     ],
-    rating: 4.9,
-    numReviews: 8,
+      
   },
   {
     name: "High-Waist Skinny Jeans",
@@ -586,8 +566,7 @@ const products = [
         altText: "High-Waist Skinny Jeans Back View",
       },
     ],
-    rating: 4.8,
-    numReviews: 20,
+      
   },
   {
     name: "Wide-Leg Trousers",
@@ -614,8 +593,7 @@ const products = [
         altText: "Wide-Leg Trousers Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 15,
+      
   },
   {
     name: "Stretch Leggings",
@@ -642,8 +620,7 @@ const products = [
         altText: "Stretch Leggings Back View",
       },
     ],
-    rating: 4.5,
-    numReviews: 30,
+      
   },
   {
     name: "Pleated Midi Skirt",
@@ -670,8 +647,7 @@ const products = [
         altText: "Pleated Midi Skirt Back View",
       },
     ],
-    rating: 4.6,
-    numReviews: 18,
+      
   },
   {
     name: "Flared Palazzo Pants",
@@ -698,8 +674,7 @@ const products = [
         altText: "Flared Palazzo Pants Back View",
       },
     ],
-    rating: 4.4,
-    numReviews: 22,
+      
   },
   {
     name: "High-Rise Joggers",
@@ -726,8 +701,7 @@ const products = [
         altText: "High-Rise Joggers Back View",
       },
     ],
-    rating: 4.3,
-    numReviews: 25,
+      
   },
   {
     name: "Paperbag Waist Shorts",
@@ -754,8 +728,7 @@ const products = [
         altText: "Paperbag Waist Shorts Back View",
       },
     ],
-    rating: 4.5,
-    numReviews: 19,
+      
   },
   {
     name: "Stretch Denim Shorts",
@@ -782,8 +755,7 @@ const products = [
         altText: "Stretch Denim Shorts Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 15,
+      
   },
   {
     name: "Culottes",
@@ -810,8 +782,7 @@ const products = [
         altText: "Culottes Back View",
       },
     ],
-    rating: 4.6,
-    numReviews: 23,
+      
   },
   {
     name: "Classic Pleated Trousers",
@@ -838,8 +809,7 @@ const products = [
         altText: "Classic Pleated Trousers Back View",
       },
     ],
-    rating: 4.8,
-    numReviews: 20,
+     
   },
   {
     name: "Knitted Cropped Top",
@@ -866,8 +836,7 @@ const products = [
         altText: "Knitted Cropped Top Back View",
       },
     ],
-    rating: 4.6,
-    numReviews: 15,
+      
   },
   {
     name: "Boho Floral Blouse",
@@ -894,8 +863,7 @@ const products = [
         altText: "Boho Floral Blouse Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 20,
+     
   },
   {
     name: "Casual T-Shirt",
@@ -922,8 +890,7 @@ const products = [
         altText: "Casual T-Shirt Back View",
       },
     ],
-    rating: 4.5,
-    numReviews: 25,
+      
   },
   {
     name: "Off-Shoulder Top",
@@ -950,8 +917,7 @@ const products = [
         altText: "Off-Shoulder Top Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 18,
+      
   },
   {
     name: "Lace-Trimmed Cami Top",
@@ -978,8 +944,7 @@ const products = [
         altText: "Lace-Trimmed Cami Top Back View",
       },
     ],
-    rating: 4.8,
-    numReviews: 22,
+      
   },
   {
     name: "Graphic Print Tee",
@@ -1006,8 +971,7 @@ const products = [
         altText: "Graphic Print Tee Back View",
       },
     ],
-    rating: 4.6,
-    numReviews: 30,
+      
   },
   {
     name: "Ribbed Long-Sleeve Top",
@@ -1034,8 +998,7 @@ const products = [
         altText: "Ribbed Long-Sleeve Top Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 26,
+     
   },
   {
     name: "Ruffle-Sleeve Blouse",
@@ -1062,8 +1025,7 @@ const products = [
         altText: "Ruffle-Sleeve Blouse Back View",
       },
     ],
-    rating: 4.5,
-    numReviews: 19,
+      
   },
   {
     name: "Classic Button-Up Shirt",
@@ -1090,8 +1052,7 @@ const products = [
         altText: "Classic Button-Up Shirt Back View",
       },
     ],
-    rating: 4.8,
-    numReviews: 25,
+      
   },
   {
     name: "V-Neck Wrap Top",
@@ -1118,8 +1079,7 @@ const products = [
         altText: "V-Neck Wrap Top Back View",
       },
     ],
-    rating: 4.7,
-    numReviews: 22,
+     
   },
 ];
 

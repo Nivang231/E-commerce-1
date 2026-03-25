@@ -23,6 +23,7 @@ const ProductGrid = ({products, loading, error}) => {
                     <p className='text-gray-500 font-medium text-sm tracking-tighter'>
                         $ {product.price}
                     </p>
+                    <p>⭐ {product.numReviews} Reviews</p>
                 </div>
             </Link>
         ))}

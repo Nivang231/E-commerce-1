@@ -100,7 +100,7 @@ const UserManagement = () => {
                         </select>
                     </div>
                     <button type='submit' className='bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600'>
-                        Add User
+                        Add more Admin
                     </button>
                 </form>
             </div>
