@@ -1,32 +1,43 @@
 const express = require('express');
 const router = express.Router();
 const Subscriber = require('../models/Subscriber');
+const transporter = require("../config/nodemailer");
 
 // @route POST /api/subscribe
 // @desc Handle newsletter subscription
 // @access Public
-router.post('/subscribe', async (req,res) => {
-    const {email} = req.body;
+router.post('/subscribe', async (req, res) => {
+    const { email } = req.body;
 
-    if(!email) {
-        return res.status(400).json({message: "Email is required"});
+    if (!email) {
+        return res.status(400).json({ message: "Email is required" });
     }
 
     try {
-        let subscriber = await Subscriber.findOne({email});
+        let subscriber = await Subscriber.findOne({ email });
 
-        if(subscriber) {
-            return res.status(400).json({message: "Email is already subscribed"});
+        if (subscriber) {
+            return res.status(400).json({ message: "Email is already subscribed" });
         }
 
-        subscriber = new Subscriber({email});
+        subscriber = new Subscriber({ email });
         await subscriber.save();
 
-        res.status(201).json({message: "Successfully subscribed to the newsletter!"});
-        
+        await transporter.sendMail({
+            to: email,
+            subject: "Subscription Successful 🎉",
+            html: `
+        <h2>Welcome 🎉</h2>
+        <p>You have successfully subscribed to our newsletter.</p>
+        <p>"ShopHub"</p>
+    `
+        });
+
+        res.status(201).json({ message: "Successfully subscribed to the newsletter!" });
+
     } catch (error) {
         console.error(error);
-        res.status(500).json({message: "Server Error"});
+        res.status(500).json({ message: "Server Error" });
     }
 });
 

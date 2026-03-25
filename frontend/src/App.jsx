@@ -20,6 +20,7 @@ import EditProductPage from './components/Admin/EditProductPage'
 import OrderManagement from './components/Admin/OrderManagement'
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
+import CreateProductPage from "./components/Admin/CreateProductPage";
 
 import { Provider } from 'react-redux';
 import store from './redux/store';
@@ -54,6 +55,7 @@ const App = () => {
             <Route path='users' element={<UserManagement />} />
             <Route path='products' element={<ProductManagement />} />
             <Route path='products/:id/edit' element={<EditProductPage />} />
+            <Route path="/admin/products/create" element={<CreateProductPage />} />
             <Route path='orders' element={<OrderManagement />} />
 
           </Route>

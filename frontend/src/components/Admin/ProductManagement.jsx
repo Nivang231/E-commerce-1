@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
-import {deleteProduct, fetchAdminProducts} from "../../redux/slices/adminProductSlice";
+import { deleteProduct, fetchAdminProducts } from "../../redux/slices/adminProductSlice";
 
 const ProductManagement = () => {
     const dispatch = useDispatch();
-    const {products, loading, error} = useSelector((state) => state.adminProducts);
+    const { products, loading, error } = useSelector((state) => state.adminProducts);
 
     useEffect(() => {
         dispatch(fetchAdminProducts());
     }, [dispatch]);
-    
+
 
     const handleDelete = (id) => {
         if (window.confirm("Are you sure you want to delete the Product?")) {
@@ -18,13 +18,20 @@ const ProductManagement = () => {
         }
     };
 
-    if(loading) return <p>Loading...</p>
-    if(error) return <p>Error: {error}</p>
+    if (loading) return <p>Loading...</p>
+    if (error) return <p>Error: {error}</p>
 
     return (
         <div className='max-w-7xl mx-auto p-6'>
             <h2 className='text-2xl font-bold mb-6'>Product Management</h2>
+            <Link
+                    to="/admin/products/create"
+                    className="bg-green-600 text-white px-4 py-2 rounded mt-4 mb-4"
+                >
+                    Add Product
+                </Link>
             <div className='overflow-x-auto shadow-md sm:rounded-lg'>
+                
                 <table className='min-w-full text-left text-gray-500'>
                     <thead className='bg-gray-100 text-xs uppercase text-gray-700'>
                         <tr>

@@ -4,8 +4,31 @@ import { RiTwitterXLine } from 'react-icons/ri'
 import { TbBrandMeta } from 'react-icons/tb'
 import { FiPhoneCall } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
+import axios from "axios";
+import { useState } from "react";
 
 const Footer = () => {
+
+
+
+    const [email, setEmail] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const res = await axios.post(
+                `${import.meta.env.VITE_BACKEND_URL}/api/subscribe`,
+                { email }
+            );
+
+            alert(res.data.message);
+            setEmail("");
+        } catch (error) {
+            alert(error.response?.data?.message || "Something went wrong");
+        }
+    };
+
     return (
         <footer className='border-t py-12'>
             <div className='container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 lg:px-0'>
@@ -16,10 +39,22 @@ const Footer = () => {
                     </p>
                     <p className='font-medium text-sm text-gray-600'>Sign up and get 10% off your first order.</p>
 
-                    <form action="" className='flex'>
-                        <input type="email" placeholder='Enter your Email' className='p-3 w-full text-sm border-t border-l border-b border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all'
-                            required />
-                        <button type='submit' className='bg-black text-white px-3 py-3 text-sm rounded-r-md hover:bg-gray-800 transition-all'>Subscribe</button>
+                    <form onSubmit={handleSubmit} className='flex'>
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder='Enter your Email'
+                            className='p-3 w-full text-sm border-t border-l border-b border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-gray-500'
+                            required
+                        />
+
+                        <button
+                            type='submit'
+                            className='bg-black text-white px-3 py-3 text-sm rounded-r-md hover:bg-gray-800'
+                        >
+                            Subscribe
+                        </button>
                     </form>
                 </div>
                 <div>
