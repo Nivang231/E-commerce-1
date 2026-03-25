@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
     return (
-        <section className='relative'>
+        <section className='relative bg-blue-50'>
             <img src={heroImg} alt="Rabbit" className='w-full h-100 md:h-150 lg:h-187.5 object-cover' />
             <div className='absolute inset-0 bg-black/5  flex items-center justify-center'>
                 <div className='text-center text-white p-6'>

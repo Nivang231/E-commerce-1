@@ -42,7 +42,7 @@ console.log("Best Seller:", bestSellerProduct);
   }, [dispatch])
 
   return (
-    <div>
+    <div className='bg-blue-50'>
       <Hero />
       <GenderCollectionSection />
       <NewArrivals />

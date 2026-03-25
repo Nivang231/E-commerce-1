@@ -30,7 +30,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className='border-t py-12'>
+        <footer className='border-t py-12 bg-gray-200'>
             <div className='container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 lg:px-0'>
                 <div>
                     <h3 className='text-lg text-gray-800 mb-4'>Newsletter</h3>
@@ -94,13 +94,13 @@ const Footer = () => {
                 <div>
                     <h3 className='text-lg text-gray-800 mb-4'>Follow Us</h3>
                     <div className='flex items-center space-x-4 mb-6'>
-                        <a href="https://www.facebook.com" target='_blank' rel='noopener noreferrer' className='hover:text-gray-500'>
+                        <a href="https://www.facebook.com" target='_blank' rel='noopener noreferrer' className='hover:text-blue-500'>
                             <TbBrandMeta className='h-5 w-5' />
                         </a>
-                        <a href="https://www.instagram.com" target='_blank' rel='noopener noreferrer' className='hover:text-gray-500'>
+                        <a href="https://www.instagram.com" target='_blank' rel='noopener noreferrer' className='hover:text-pink-700'>
                             <IoLogoInstagram className='h-5 w-5' />
                         </a>
-                        <a href="https://www.twitter.com" target='_blank' rel='noopener noreferrer' className='hover:text-gray-500'>
+                        <a href="https://www.twitter.com" target='_blank' rel='noopener noreferrer' className='hover:text-white'>
                             <RiTwitterXLine className='h-4 w-4' />
                         </a>
                     </div>

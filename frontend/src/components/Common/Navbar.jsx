@@ -24,8 +24,8 @@ const Navbar = () => {
     };
 
     return (
-        <>
-            <nav className='container mx-auto flex items-center justify-between py-6 px-6'>
+        < >
+            <nav className='container mx-auto flex items-center justify-between py-6 px-6 bg'>
                 <div>
                     <Link to="/" className='text-2xl font-medium'>
                        ShopHub
